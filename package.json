@@ -1,0 +1,19 @@
+{
+  "name": "gdc-twilio-agent",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bun run --bun --watch src/index.ts",
+    "types": "bunx tsc --noEmit"
+  },
+  "dependencies": {
+    "elysia": "latest",
+    "openai": "^6.39.0",
+    "twilio": "^6.0.2"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "module": "src/index.js"
+}
