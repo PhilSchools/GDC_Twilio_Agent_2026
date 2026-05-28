@@ -6,6 +6,7 @@ const requiredEnvVars = [
   "TWILIO_API_KEY_SID",
   "TWILIO_API_KEY_SECRET",
   "OPENAI_API_KEY",
+  "TRANSFER_TO_NUMBER",
 ];
 
 const missingVars = requiredEnvVars.filter((v) => !Bun.env[v]);

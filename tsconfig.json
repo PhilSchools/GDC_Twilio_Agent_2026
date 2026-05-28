@@ -29,8 +29,24 @@
     "moduleResolution": "bundler", /* Specify how TypeScript looks up a file from a given module specifier. */
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
-    // "baseUrl": "./",                                  /* Specify the base directory to resolve non-relative module names. */
-    // "paths": {},                                      /* Specify a set of entries that re-map imports to additional lookup locations. */
+    // "baseUrl": "./", /* Specify the base directory to resolve non-relative module names. */
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@assets/*": [
+        "./assets/*"
+      ],
+      "@voices": [
+        "./src/voices/ElevenLabsVoices.ts"
+      ],
+      "@prompts/*": [
+        "./src/prompts/*"
+      ],
+      "@routes/*": [
+        "./src/routes/*"
+      ],
+    }, /* Specify a set of entries that re-map imports to additional lookup locations. */
     // "rootDirs": [],                                   /* Allow multiple folders to be treated as one when resolving modules. */
     // "typeRoots": [],                                  /* Specify multiple folders that act like './node_modules/@types'. */
     "types": [
